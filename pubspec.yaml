@@ -1,0 +1,48 @@
+name: nicol_erp
+description: "NiCol Enterprise Resource Planning."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # 🔥 SUPABASE
+  supabase_flutter: ^2.5.6
+
+  # 🧠 STATE MANAGEMENT
+  flutter_riverpod: ^2.5.1
+
+  # 📤 SHARE + IMAGE PICKER (MUST BE HERE)
+  share_plus: ^10.0.2
+  image_picker: ^1.0.7
+
+  # 🧮 UTILITIES
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.3
+
+# ✅ MUST be outside "flutter:"
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/logo.png"
+  adaptive_icon_background: "#ffffff"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/logo.png
+    - assets/logoo.jpg
